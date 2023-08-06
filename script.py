@@ -5,7 +5,9 @@ import json
 # Загрузка модели CatBoost
 from catboost import CatBoostRegressor
 model = CatBoostRegressor()
-model.load_model(r'C:\Users\Dmitriy\pandas_guide\Pandas-Guide\projects_DS_DA\realty_mag_belka\realty_model')
+
+# Необходимо указать путь!
+model.load_model('realty_model')
 
 app = Flask(__name__)
 
